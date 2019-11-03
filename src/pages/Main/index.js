@@ -57,7 +57,7 @@ export default class Main extends Component {
         return (<Container>
         <h1>
             <FaGithubAlt/>
-            Repositories
+            Repository issue viewer
         </h1>
         <Form onSubmit={this.handleSubmit}>
             <input 
@@ -77,7 +77,7 @@ export default class Main extends Component {
             {repositories.map(repository=>(
                 <li key={repository.name}>
                     <span>{repository.name}</span>
-                    <Link to={`/repository/${encodeURIComponent(repository.name)}`}>See details</Link>
+                    <Link to={`/repository/${encodeURIComponent(repository.name)}`}>View the latest open issues</Link>
                 </li>
 
             ))}

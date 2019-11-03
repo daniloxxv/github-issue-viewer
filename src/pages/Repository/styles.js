@@ -60,9 +60,8 @@ export const Owner = styled.header`
 `
 
 export const IssueList = styled.ul`
-    padding-top: 30px;
+
     margin-top: 30px;
-    border-top: 1px solid #eee;
     list-style: none;
 
     li {
@@ -96,6 +95,17 @@ export const IssueList = styled.ul`
                 &:hover {
                     color: #7159c1;
                 }
+            }
+
+            small {
+                background: #eee;
+                color: #333;
+                border-radius: 2px;
+                font-size: 10px;
+                font-weight: 600;
+                height: 20px;
+                padding: 3px 4px;
+                margin-left: 5px;
             }
         }
         p {
