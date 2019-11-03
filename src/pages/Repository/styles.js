@@ -86,7 +86,7 @@ export const IssueList = styled.ul`
         margin-left: 15px;
         
         strong {
-            font-size: 16px;
+            font-size: 14px;
 
             a {
                 text-decoration: none;
@@ -104,7 +104,7 @@ export const IssueList = styled.ul`
                 font-size: 10px;
                 font-weight: 600;
                 height: 20px;
-                padding: 3px 4px;
+                padding: 2px 3px;
                 margin-left: 5px;
             }
         }
