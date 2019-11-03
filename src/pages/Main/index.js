@@ -1,11 +1,25 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-import {Title } from './styles'
+import {FaGithubAlt, FaPlus} from 'react-icons/fa'
 
-export default function Main(){
-    let seconds = new Date().getSeconds()
-    return <Title seconds={seconds}>Hello, Main
-        <small>Just testing something</small>
+import {Container, Form, SubmitButton} from './styles'
 
-    </Title>
+export default class Main extends Component(){
+    return <Container>
+        <h1>
+            <FaGithubAlt/>
+            Repositories
+        </h1>
+        <Form onSubmit={()=>{}}>
+            <input 
+                type="text"
+                placeholder="Add repository"
+            />
+
+            <SubmitButton disabled>
+                <FaPlus color="FFF" size="14"/>
+            </SubmitButton>
+
+        </Form>
+    </Container>
 }
