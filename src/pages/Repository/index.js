@@ -1,7 +1,13 @@
 import React, {Component} from 'react'
+import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
+import {FaSpinner} from 'react-icons/fa'
 
 import api from '../../services/api'
+import { Loading, Owner } from './styles'
+import Container from '../../components/Container'
+
+
 
 export default class Repository extends Component {
     static propTypes = {
@@ -41,8 +47,21 @@ export default class Repository extends Component {
     }
 
     render(){
+        const {repository, issues, loading} = this.state
+        if (loading){
+            return (<Loading> <span>Loading repository data...</span><FaSpinner/> </Loading>)
+        }
+
         return (
-            <h1>Repository: {this.repoName}</h1>
+            <Container> 
+                <Owner>
+                    <Link to="/">Return to main page</Link>
+                    <img src={repository.owner.avatar_url} alt={repository.owner.login}/>
+                    <h1>{repository.name}</h1>
+                    <p>{repository.description}</p>
+                </Owner>
+            
+            </Container>
         )
     }
 
