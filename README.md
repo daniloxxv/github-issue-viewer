@@ -1,4 +1,9 @@
+A small React app using the GitHub API to keep display repository issues. 
 
+Technologies used: 
+- React
+- React Router
+- Styled Components
 
 ---
 
