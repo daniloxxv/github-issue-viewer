@@ -1,4 +1,4 @@
-A small React app using the GitHub API to keep display repository issues. 
+A small React app using the GitHub API to display issues. 
 
 Technologies used: 
 - React
