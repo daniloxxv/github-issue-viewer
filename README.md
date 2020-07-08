@@ -5,8 +5,6 @@ Technologies used:
 - React Router
 - Styled Components
 
-Created as part of the RocketSeat React course
-
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
